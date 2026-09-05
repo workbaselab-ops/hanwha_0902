@@ -179,3 +179,20 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ── 한화 부트캠프 추가 규칙 ──────────────────────────
+# 가상환경: 이름 무관하게 전부 무시 (.venv, .thirdvenv, myvenv 등)
+*venv/
+*venv.bak/
+
+# API 키·비밀값 (Public 저장소이므로 절대 커밋 금지)
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# macOS / Windows 시스템 파일
+.DS_Store
+Thumbs.db
+desktop.ini
