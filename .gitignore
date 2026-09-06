@@ -196,3 +196,7 @@ secrets/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# VS Code 개인 설정 (인터프리터 경로 등 기기별 값 — Windows/Mac 오가므로 공유 안 함)
+# ※ .py 파일과는 무관. VS Code 설정 폴더만 무시함
+.vscode/
