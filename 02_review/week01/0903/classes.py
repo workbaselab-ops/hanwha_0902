@@ -419,6 +419,15 @@ p2.display_info()    # 함수(메서드)이므로 괄호를 붙여서 "호출"
 # 누보아 상품을 표현하는 Product 클래스: __init__(self, name, price)
 # discount(self, rate) 메서드: price * (1 - rate) 를 return.
 # 원피스 39000원, 코트 129000원을 만들고 원피스 20% 할인가 출력.
+
+class Product:
+    def __(init)__(self, name, price):
+        self.name = name
+        self.price = price
+
+class discaount(self, rate)
+
+    
 # [답]
 # 31200.0
 # 오답노트: 이건 return 이 있고 greet 는 return 이 없다. 차이가 뭔가?

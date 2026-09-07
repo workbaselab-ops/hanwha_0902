@@ -184,6 +184,7 @@ cython_debug/
 # 가상환경: 이름 무관하게 전부 무시 (.venv, .thirdvenv, myvenv 등)
 *venv/
 *venv.bak/
+.my_repo/
 
 # API 키·비밀값 (Public 저장소이므로 절대 커밋 금지)
 .env
