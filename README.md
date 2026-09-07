@@ -31,8 +31,8 @@
 
 1. GitHub Desktop → **Fetch/Pull** (다른 컴퓨터에서 올린 것 받기)
 2. VS Code로 `hanwha_0902` 폴더 열기
-3. 가상환경이 없으면 만들기 (컴퓨터마다 한 번): 터미널에서 `python -m venv .firstvenv` (Mac은 `python3`)
-4. 가상환경 켜기: Windows `.firstvenv\Scripts\activate` / Mac `source .firstvenv/bin/activate`
+3. 가상환경이 없으면 만들기 (컴퓨터마다 한 번): 터미널에서 `python -m venv .venv` (Mac은 `python3`)
+4. 가상환경 켜기: Windows `.venv\Scripts\activate` / Mac `source .venv/bin/activate`
 5. 작업 → 끝나면 GitHub Desktop에서 Commit → Push → (강의실이면) 로그아웃
 
 ## 커밋 전 확인
@@ -49,4 +49,4 @@
 | 위치 | 장비 | 비고 |
 | --- | --- | --- |
 | 강의실 | 공용 Windows 노트북 (D드라이브) | 종료 시 VS Code·GitHub Desktop **로그아웃 필수** |
-| 집 | Mac Studio M3 (`~/Desktop/dev`) | Python 3.12.10 |
+| 집 | Mac Studio M2 (`~/Desktop/dev`) | Python 3.12.10 |
