@@ -1,5 +1,5 @@
 questions = ["asyncio란?", "", "FastAPI란?"]
-valid_questions: list[str] = []
+valid_questions: list[str] = []    # "문자열(str)을 담는 리스트"
 
 for question in questions:
 
@@ -9,25 +9,22 @@ for question in questions:
         continue    # <--- cleaned가 빈 문자열("")이면, 이후 실행X, 3번째 요소를 실행.
 
     valid_questions.append(cleaned)
-
+                    # append()는 리스트의 마지막에 값을 하나 추가하는 Python의 내장 리스트 메서드.
 print(valid_questions)
 
 #---------------
-#
+# ['asyncio란?', 'FastAPI란?']
 #---------------
 
-# ['asyncio란?', 'FastAPI란?']
 
+# ['asyncio란?, '', 'FastAPI란?', 'cleanded'] -> 총 4개
 
+# 1. strip() // append() // continue 비교
+# strip()   → 문자열(str) 메서드 : 앞뒤 공백 제거
+# append()  → 리스트(list) 메서드 : 마지막에 값 추가
+# continue  → 메서드가 아니라 반복문 제어문
 
-
-# 질문은 2가지 
-# 유효성 리스트는 []안에 문자로 나열된다
-# Cleanded는 질물 양쪽에
-
-# 1.append가 무엇인가?
-
-# 2.valid_questions: list[str] = []는 어떤 무엇을 쓰고, 출력시 어떻게 나오는가?
-
-
-
+# conticue는 주로 반복문(for, while)에서 이번 반복만 건너뛰고 다음 반복으로 넘어갈 때 사용
+# -> "이번 차례는 건너뛰고 다음 차례로 가!
+# continue = 이번 것만 패스하고 다음으로
+# break    = 반복 자체를 그만
