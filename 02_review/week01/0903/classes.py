@@ -421,11 +421,19 @@ p2.display_info()    # 함수(메서드)이므로 괄호를 붙여서 "호출"
 # 원피스 39000원, 코트 129000원을 만들고 원피스 20% 할인가 출력.
 
 class Product:
-    def __(init)__(self, name, price):
+    def __init__(self, name, price):
         self.name = name
         self.price = price
 
-class discaount(self, rate)
+class Discaount(self, rate):
+    self.rate = rate
+    return (price*(1-rate))
+
+Product1 = ("원피스,", "39000원")
+product2 = ("코트,", "29000원" )
+
+print(원피스.discount(20))
+
 
     
 # [답]
