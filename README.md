@@ -50,3 +50,56 @@
 | --- | --- | --- |
 | 강의실 | 공용 Windows 노트북 (D드라이브) | 종료 시 VS Code·GitHub Desktop **로그아웃 필수** |
 | 집 | Mac Studio M2 (`~/Desktop/dev`) | Python 3.12.10 |
+
+
+
+
+
+
+
+
+
+# 26-09-07 수업
+
+### **깃허브에서 충돌나는거 해결하는 방법**
+
+.git 아얘 삭하기
+
+(교육장)수정 하고나서 push : a  → (집) 수정 push  : b
+
+## **Pydantic**
+
+https://pydantic.dev/docs/validation/latest/get-started/
+혼자 연습용 official 사이트
+
+pip install pydantic 
+
+pip install annotated_types
+
+### **수업시간에 코랩 이용해서 연습**
+
+코랩에서 연습한 파일을 → 
+
+ (.ipyd),(.py)
+
+Jupyter 검색 해서 확장프로그램 다운받기 → ipyd문서가 열린다
+
+### **강사님 깃허브 계정**
+
+https://github.com/skc4365/hanwha_0902
+
+day1~day4 : 혼자연습용   
+
+### **markdown 문서**
+
+.md
+
+코드처럼 볼수도있고, preview를 다운받거나 열리는 프로그램에서 열어서 직접 수정도 가능
+
+markdown 확장자 설치 vs code에서도 볼수있음
+
+### **디버깅하는 방법**
+
+행번호 앞에 마우스오버시 빨간 점 노출
+
+vs code에서 디버깅 하는 방법 검색해서 확인가능
