@@ -9,18 +9,19 @@
 
 ```
 .
+├── 00_guide/          가이드 — 날짜와 무관한 참고 문서. 목차는 00_guide/README.md
+│   ├── env/           환경·도구 (Windows↔Mac, 가상환경, VS Code, Git, GitHub Desktop)
+│   └── concepts/      개념 (문법, 문자열, 딕셔너리, 클래스, NumPy, Streamlit, Pydantic …)
 ├── 01_class/          수업 중 따라 친 코드
-│   └── week01/
-│       ├── 0902/
-│       ├── 0903/
-│       └── 0904/
-├── 02_review/         복습 — 백지 타이핑 코드 + 가이드 문서
-│   └── week01/
+│   └── week{NN}/{MMDD}/
+├── 02_review/         복습 — 백지 타이핑 오답노트 (.py)
+│   └── week{NN}/{MMDD}/
 └── 03_assignment/     별도 제출물
 ```
 
 - 최상위 폴더는 **hanwha_0902**
-- 폴더는 `week{NN}/{MMDD}`까지만. 주제별 하위 폴더는 만들지 않는다.
+- `01_class/`, `02_review/`는 `week{NN}/{MMDD}`까지만. 주제별 하위 폴더는 만들지 않는다.
+- 예외는 `00_guide/`. 날짜와 무관한 참고 문서라 `env/`, `concepts/` 두 폴더로 나눈다. 그 밑에 더 만들지 않는다.
 - 파일명은 **전부 소문자**, 띄어쓰기 대신 `_`, **한글 금지** (Windows/Mac 호환).
 - 단어는 W3Schools 메뉴명에서 가져온다. 모르겠으면 `01.py`, `02.py`도 무방.
 - **`import` 뒤에 오는 이름은 파일명으로 쓰지 않는다.** `numpy.py`, `streamlit.py`, `time.py`처럼 만들면
