@@ -77,6 +77,6 @@ m = Meeting(when= '2020-01-01T12:00', where= 'home')
 
 print(m.model_dump(exclude_unset=True))      #사용자가 지정하지 않은것은 출력하지 않음 # where 출력시 byte형태로 나옴  b'home'
 
-print(m.model_dump(exclude={'where'}, mode='json'))   # .model_dump() -> 파이덴틱 모들을 일반적인 파이썬 딕트로 변환
+print(m.model_dump(exclude={'where'}, mode='json'))   # .model_dump() -> 파이덴틱 모델을 일반적인 파이썬 딕트로 변환
 
 print(m.model_dump_json(exclude_defaults=True))
