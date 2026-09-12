@@ -41,9 +41,9 @@ async def read_user(user_id: str):
 
 
 # http://127.0.0.1:8000/user/김희영
-@app.get("/user/{user_id}")              # read_user2 실행안됨-> {"detail":"Not Found"} 뜸
-async def read_user2(user_id: str):      # 이유: 경로상 상단 read_user가 먼저 매칭
-    return {"user_id": user_id}          # 기본적으로 첫 번째 것이 항상 사용됨
+@app.get("/user/{user_id}")                # 이유: 먼저 등록된 함수(read_user)가 대신 실행된다.
+async def read_user2(user_id: str):        # 따라서 경로상 상단 read_user가 먼저 매칭되어 read_user2 아예 호출 안됨
+    return {"user2_id": user_id}           
 
 
 # http://127.0.0.1:8000/users
@@ -52,10 +52,6 @@ async def red_users():
     return ["Rick", "Morty" ]
 
 
-# >>>>>>>>>>>>>>>>
-# //채워 놓아야 할 것들//
-# 경로 매개변수 일부 빠짐
-# <<<<<<<<<<<<<<<<
 
 # http://localhost:8000/items2/test    # 경로뒤에 /test 추가
 # http://localhost:8000/items2/{test}
