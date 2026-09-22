@@ -207,5 +207,5 @@ CLAUDE.md
 docs/
 handoff/
 handoff_*.md
-# Claude Code 로컬 설정·스킬 (Public 저장소 — 9/7 결정과 동일 이유로 제외, 9/13 확인)
+# Claude Code 로컬 설정·스킬 
 .claude/
